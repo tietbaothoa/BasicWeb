@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phonenumber = $_POST["phonenumber"];
     $role = "student";
 
-    // Kiểm tra username đã tồn tại chưa
     $checkUser = $conn->query("SELECT username FROM users WHERE username = '$username'");
 
     if ($checkUser->num_rows > 0) {
@@ -58,7 +57,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <h2 class="text-center mb-4">Thêm Sinh Viên</h2>
 
-    <!-- Display messages -->
     <?php if (!empty($message)): ?>
         <div class="alert alert-info"><?= htmlspecialchars($message); ?></div>
     <?php endif; ?>
