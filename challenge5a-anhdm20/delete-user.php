@@ -2,11 +2,9 @@
 session_start();
 include 'config.php';
 
-// Kiểm tra xem 'username' có được truyền qua URL không
 if (isset($_GET['username'])) {
     $username = $_GET['username'];
 
-    // Câu lệnh SQL để xóa người dùng
     $sql = "DELETE FROM users WHERE username = '$username'";
 
     if ($conn->query($sql) === TRUE) {
@@ -18,6 +16,5 @@ if (isset($_GET['username'])) {
     echo "Không có tên người dùng.";
 }
 
-// Đóng kết nối
 $conn->close();
 ?>
