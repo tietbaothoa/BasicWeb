@@ -123,7 +123,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `fullname`, `email`, `phonenumber`, `avatar`, `role`) VALUES
-('student1', '123456aA@', 'Sinh viên 1', 'sv1@gmail.com', '0987654321', NULL, 'student'),
+('student1', '$2y$10$3AdnBzLpAT.S75Urb8Msf.nHUu9SA1/MEOAmwOFlzXLXr879fC8mG', 'Sinh viên 1', 'sv1@gmail.com', '0987654444', NULL, 'student'),
 ('student2', '$2y$10$3AdnBzLpAT.S75Urb8Msf.nHUu9SA1/MEOAmwOFlzXLXr879fC8mG', 'Sinh viên 2', 'sv2@gmail.com', '0987654324', NULL, 'student'),
 ('teacher1', '$2y$10$x2woysa5zsyvUcvlbCIePeyte6tebFx8rjvxsZ4u3ggR8Eubc9muC', 'Giáo viên 1', 'gv1@gmail.com', '0987654321', NULL, 'teacher'),
 ('teacher2', '$2y$10$rpheNbX8xnJ3bKz2wl5oiOSB.dZuegEYgm8ib8XSYKS.Xw3bisqWa', 'Giáo viên 2', 'gv2@gmail.com', '0987654322', NULL, 'teacher');
